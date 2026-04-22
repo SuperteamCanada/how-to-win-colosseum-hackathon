@@ -13,6 +13,7 @@ A practical, no-BS guide to shipping a winning Solana project at [Colosseum](htt
 - [What Colosseum Actually Is](#what-colosseum-actually-is)
 - [The Winning Formula](#the-winning-formula)
 - [Submission Requirements](#submission-requirements)
+- [Superteam Canada Resources](#superteam-canada-resources)
 - [Tool #1: solana.new (Scaffold in 60 Seconds)](#tool-1-solanannew--scaffold-in-60-seconds)
 - [Tool #2: Helius CLI (Your Solana Backend)](#tool-2-helius-cli--your-solana-backend)
 - [Tool #3: Solana CLI (Your Swiss Army Knife)](#tool-3-solana-cli--your-swiss-army-knife)
@@ -75,6 +76,50 @@ Every Colosseum submission needs:
 4. **Optional**: Weekly video updates (increases visibility with judges)
 
 > **The pitch video is the first thing judges see.** If they can't understand your project in 60 seconds, you've already lost. Script it, rehearse it, nail it.
+
+---
+
+## Superteam Canada Resources
+
+[Superteam Canada](https://superteamcan.notion.site/) runs dedicated hackathon support for the Frontier Hackathon. Use these **before you write a single line of code**.
+
+### Events & Build Sessions
+
+| Event | Dates | What You Get |
+|-------|-------|-------------|
+| [Kickoff Week Build Station](https://luma.com/Kickoff-week) | April 13 - 17 | In-person co-working, mentorship, team formation |
+| [Remote Build](https://luma.com/Remote-Build) | April 18 - May 6 | Structured remote sessions with check-ins |
+| [Final Sprint Build Station](https://luma.com/Final-Sprint) | May 7 - 11 | Final push, demo prep, submission support |
+
+### Office Hours & Workshops
+
+- **Office Hours** with Fibonacci & Supersimon - [Book on Calendly](https://calendly.com/fibonacci-superteam/stca-office-hours)
+- **Pitching Masterclass** with DePitch Academy - nail your 3-minute pitch video
+- **UX for Devs + Value Prop** workshops - make your demo actually make sense to judges
+- [All workshop recordings](https://youtube.com/playlist?list=PLWNfKcElC8kXMpegVS9JgX7VAPOmG6Oj5&si=uTHwjvkaYjfj1I0y) on YouTube
+
+### Cheat Sheets & Templates
+
+- [Hackathon Cheat Sheet](https://superteamcan.notion.site/cheat-sheet) - Step-by-step guide from idea to submission
+- [Pitch Video Template](https://www.loom.com/share/85574aed295c47cba29b2fba7b2d76da?sid=693a46b9-83a6-4529-a452-deddd2a3dd79) - Loom template so you don't start from blank
+- [Colosseum Tips](https://superteamcan.notion.site/Colosseum-Tips-1ae380b97c4681cabad4e7f85ae0af7b) - Judging criteria + what judges actually look for
+- [Past Winner Pitches](https://docs.google.com/spreadsheets/d/19BzDy0DoJP3qNlK66qlmzYc8qh4H-zpf3LGialda-a0/edit?gid=0#gid=0) - Study what worked
+
+### Resource Library
+
+- [All Resources](https://superteamcan.notion.site/allresources) - Getting started, product, positioning, marketing, pitching
+- [Developer Tools](https://build.superteam.fun/developer-tools) - Curated Solana dev tools
+- [Hackathon Tools](https://hackathon.superteam.fun/) - Everything you need in one place
+- [Frontier Sponsored Resources](https://colosseum.com/frontier/resources) - Free credits and tools from sponsors
+- [Spark North](https://superteam.ca/spark-north) - Pre-accelerator program (Frontier cohort running now)
+
+### Community
+
+- [Canada Hackathon Telegram](https://t.me/+v8U0ieEc5CI5M2Mx) - Peer support, updates, team matching
+- [Colosseum Discord](http://colosseum.com/discord) - Official hackathon comms
+- [Events Calendar](https://lu.ma/superteamca) - All upcoming events
+
+> **Pro tip**: The office hours and workshops are the highest-ROI hours of your hackathon. A 30-minute session with a mentor can save you 8 hours of building the wrong thing.
 
 ---
 
