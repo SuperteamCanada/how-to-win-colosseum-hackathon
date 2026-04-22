@@ -2,20 +2,47 @@
 
 A practical, no-BS guide to shipping a winning Solana project at [Colosseum](https://www.colosseum.org/) hackathons. Built by [Superteam Canada](https://twitter.com/SuperteamCA).
 
-> **TL;DR**: The teams that win don't write the most code. They ship something real users can touch in 48 hours. This guide gives you the tools and patterns to do exactly that.
+> **TL;DR**: The teams that win don't write the most code. They ship something real users can touch. This guide gives you the tools and patterns to do exactly that.
+
+> **Current**: [Frontier Hackathon](https://colosseum.com/frontier) (April 6 - May 11, 2026) - $2.5M+ deployed into select winning founders. Grand Champion: $30K USDC. Top 20: $10K each. Winners join Colosseum's accelerator with $250K funding.
 
 ---
 
 ## Table of Contents
 
+- [What Colosseum Actually Is](#what-colosseum-actually-is)
 - [The Winning Formula](#the-winning-formula)
+- [Submission Requirements](#submission-requirements)
 - [Tool #1: solana.new (Scaffold in 60 Seconds)](#tool-1-solanannew--scaffold-in-60-seconds)
 - [Tool #2: Helius CLI (Your Solana Backend)](#tool-2-helius-cli--your-solana-backend)
 - [Tool #3: Solana CLI (Your Swiss Army Knife)](#tool-3-solana-cli--your-swiss-army-knife)
 - [Hackathon Timeline Blueprint](#hackathon-timeline-blueprint)
 - [Common Mistakes That Lose Hackathons](#common-mistakes-that-lose-hackathons)
 - [Winning Project Patterns](#winning-project-patterns)
+- [Past Winners & What They Did Right](#past-winners--what-they-did-right)
 - [Resources](#resources)
+
+---
+
+## What Colosseum Actually Is
+
+Colosseum isn't a weekend hackathon. It's a **multi-week online competition** that doubles as a startup launchpad. It combines three pillars:
+
+1. **Hackathon** - Build and submit a working Solana project
+2. **Accelerator** - Winners get accepted into a structured program
+3. **Venture Fund** - Select founders receive $250K+ in funding
+
+Previous hackathons have seen 9,000+ participants and 1,500+ submissions. The scale is massive, but the bar for winning is clear: **ship something real**.
+
+### Prize Structure (Frontier Hackathon)
+
+| Prize | Amount |
+|-------|--------|
+| Grand Champion | $30,000 USDC |
+| Next 20 Best Startups | $10,000 USDC each |
+| University Award | $10,000 USDC |
+| Public Goods Award | $10,000 USDC |
+| Accelerator Entry | $250,000 funding |
 
 ---
 
@@ -32,6 +59,22 @@ Judges want to see:
 - A working product (not a pitch deck)
 - Smart use of Solana's strengths (speed, low cost, composability)
 - A team that can ship
+- **Long-term startup thinking**, not a weekend hack
+
+Average winning team: **3+ people** with both technical and non-technical members (design, product, marketing).
+
+---
+
+## Submission Requirements
+
+Every Colosseum submission needs:
+
+1. **GitHub repository** - Code must be created during the hackathon
+2. **Pitch video** (max 3 minutes) - Team background, problem, target user
+3. **Technical demo video** - Implementation details, Solana integration, architecture
+4. **Optional**: Weekly video updates (increases visibility with judges)
+
+> **The pitch video is the first thing judges see.** If they can't understand your project in 60 seconds, you've already lost. Script it, rehearse it, nail it.
 
 ---
 
@@ -52,9 +95,16 @@ You'll be prompted to pick a template. Here's what to choose:
 | Template | Best For | Includes |
 |----------|----------|----------|
 | `nextjs-anchor` | **Most hackathon projects** | Next.js frontend + Anchor program |
-| `nextjs-counter` | Learning the basics | Simple counter program with UI |
-| `nextjs-minimal` | Custom program logic | Bare bones Next.js + wallet adapter |
-| `react-native-anchor` | Mobile dApps | React Native + Anchor |
+| `react-vite-anchor` | Lighter frontend | React + Vite + Anchor |
+| `kit-expo-minimal` | Mobile dApps | Expo + Solana Kit |
+| `commerce-kit-store` | Commerce/payments | Full store template |
+| `lazorkit-starter-next` | Passkey wallets | Passwordless auth with LazorKit |
+| `merkle-airdrop` | Token distribution | Merkle tree airdrop system |
+| `solana-blinks-axum` | Actions/Blinks | Solana Actions with Rust backend |
+| `zk-compression-airdrop` | ZK compression | Compressed token airdrop |
+| `x402-template` | Paid APIs | x402 payment protocol |
+
+> **Hackathon edge**: The community templates like `zk-compression-airdrop`, `solana-blinks-axum`, and `lazorkit-starter-next` use cutting-edge Solana features that impress judges. Don't just build another swap UI.
 
 ### Recommended: The Minimal Start
 
@@ -110,15 +160,22 @@ my-project/
 # Install globally
 npm install -g helius-cli
 
-# Create a free account (no credit card needed)
+# Generate a keypair (needed for account creation)
+helius keygen
+
+# Create a free account (no credit card, no web signup)
+# Note: wallet needs ~0.001 SOL + 1 USDC to register
 helius signup
 
-# Create a project
-helius project create my-hackathon
+# List your projects and get API keys
+helius projects
+helius apikeys <project-id>
 
-# Get your API key
-helius project list
+# Get your RPC endpoint URLs
+helius rpc <project-id>
 ```
+
+> The Helius CLI has **95+ commands** across 14 categories. Every command supports `--json` for scripting. Run `helius --help` to explore.
 
 ### What Helius Gives You (Free Tier)
 
@@ -473,6 +530,22 @@ Build something that's only possible on Solana. Sub-second settlement, micro-tra
 
 ---
 
+## Past Winners & What They Did Right
+
+| Project | Prize | What They Built | Why They Won |
+|---------|-------|-----------------|--------------|
+| **Unruggable** | Grand Champion ($30K) | Hardware wallet + companion app | Solved a real security problem with polished UX |
+| **Capitola** | First Prize ($25K) | Prediction markets meta-aggregator | Novel DeFi primitive with clear market need |
+| **Pythia** | University Award | Research/data tool | Strong technical execution from student team |
+| **Samui Wallet** | Public Good Award | Wallet infrastructure | Built something the whole ecosystem benefits from |
+
+**Common threads**: Clear problem statement, working demo, professional pitch video, genuine Solana integration (not just "on Solana" for the sake of it).
+
+Browse all past projects: [arena.colosseum.org/projects/explore](https://arena.colosseum.org/projects/explore)
+Hall of fame: [arena.colosseum.org/hackathon/hall-of-fame](https://arena.colosseum.org/hackathon/hall-of-fame)
+
+---
+
 ## Resources
 
 ### Official Docs
@@ -486,6 +559,12 @@ Build something that's only possible on Solana. Sub-second settlement, micro-tra
 - [`@solana/wallet-adapter`](https://github.com/solana-labs/wallet-adapter) - Wallet connection
 - [`helius-sdk`](https://www.npmjs.com/package/helius-sdk) - Helius TypeScript SDK
 - [`create-solana-dapp`](https://github.com/solana-foundation/create-solana-dapp) - Project scaffolding
+
+### Colosseum Resources
+- [How to Win a Colosseum Hackathon](https://blog.colosseum.com/how-to-win-a-colosseum-hackathon/) - Official guide from Colosseum
+- [Perfecting Your Hackathon Submission](https://blog.colosseum.com/perfecting-your-hackathon-submission/) - Submission tips
+- [Colosseum Copilot](https://colosseum.com/copilot) - AI assistant for hackathon questions
+- [Past Projects](https://arena.colosseum.org/projects/explore) - Browse what's been built before
 
 ### Superteam Canada
 - Follow [@SuperteamCA](https://twitter.com/SuperteamCA) for hackathon announcements
