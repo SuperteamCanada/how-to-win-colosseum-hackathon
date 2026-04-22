@@ -1,6 +1,6 @@
 # How to Win a Colosseum Hackathon
 
-A practical, no-BS guide to shipping a winning Solana project at [Colosseum](https://www.colosseum.org/) hackathons. Built by [Superteam Canada](https://twitter.com/SuperteamCA).
+A practical, no-BS guide to shipping a winning Solana project at [Colosseum](https://www.colosseum.org/) hackathons. Built by [Superteam Canada](https://x.com/superteamcan).
 
 > **TL;DR**: The teams that win don't write the most code. They ship something real users can touch. This guide gives you the tools and patterns to do exactly that.
 
@@ -612,7 +612,7 @@ Hall of fame: [arena.colosseum.org/hackathon/hall-of-fame](https://arena.colosse
 - [Past Projects](https://arena.colosseum.org/projects/explore) - Browse what's been built before
 
 ### Superteam Canada
-- Follow [@SuperteamCA](https://twitter.com/SuperteamCA) for hackathon announcements
+- Follow [@superteamcan](https://x.com/superteamcan) for hackathon announcements
 - Join our community for team matching and mentorship
 
 ---
@@ -632,4 +632,4 @@ PRIORITY    helius-sdk getPriorityFeeEstimate()
 
 ---
 
-*Built with urgency by [Superteam Canada](https://twitter.com/SuperteamCA). Go win something.*
+*Built with urgency by [Superteam Canada](https://x.com/superteamcan). Go win something.*
